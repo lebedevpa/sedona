@@ -3,9 +3,115 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: sedona</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+      <header>
+        <div class="container">
+            <div class="logo">
+                <img src="#" alt="logo">
+            </div>
+        <nav>
+            <ul>
+                <li><a href="#">карта штата</a></li>
+                <li><a href="#">информация</a></li>
+                <li><a href="#">фото и видео</a></li>
+                <li><a href="#">гостиницы</a></li>
+            </ul>
+        </nav>
+        </div>    
+      </header>
+      <main>
+          <div class="container">
+              <div class="big-picture">
+                  <h2>welcome</h2>
+                  <span>to the gorgeous</span>
+                  <h2 class="column-title">sedona</h2>
+                  <span class="moto">"Because the Grand Canyon sucks!"</span>
+              </div>
+              <div class="reasons">
+                <span>седона- небольшой городокв аризоне, заслуживающий большего!</span>
+                  <p>рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
+              </div>
+              <div class="reason-1">
+                <span>настоящий городок</span><p>№1</p>
+                  <p>Седона не атракцион для туристов, там течет своя жизнь</p>
+                  <img src="#">
+                  <div class="living">
+                      <span>жилье</span>
+                      <p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                  </div>
+                  <div class="food">
+                      <span>еда</span>
+                      <p>всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+                  </div>
+                  <div class="gifts">
+                      <span>сувениры</span>
+                      <p>не только китайского, но и местного производства!</p>
+                  </div>
+              </div>
+              <div class="reason-2">
+                <img src="#">
+                <span>там есть мост дьявола</span>
+                <p>№2</p>
+                <p>да, по нему можно пройти! если конечно вы осмелитесь</p>  
+              </div>
+              <div class="reason-3">
+                  <span>небольшая площадь</span>
+                  <p>№3</p>
+                  <p>все достопримечательности назодятся очень близко</p>
+              </div>
+              <div class="reason-4">
+                  <span>красивая догора</span>
+                  <p>№4</p>
+                  <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+              </div>
+              <div class="reason-5">
+                  <span>мало туристов</span>
+                  <p>№5</p>
+                  <p>большинство едет в гранд каньон и толпится там</p>
+              </div>
+              <div class="">
+                <h2 class="column-title">заинтересовались?</h2>
+                <p>укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостниц в седоне</p>  
+              </div>
+              <div class="map">
+              </div>
+              <div class="form">
+                <h2 class="form-title">поиск гостиницы в седоне</h2>
+                <form action="/echo" method="post">
+                    <label for="check-in">дата заезда</label>
+                    <input class="date" type="text" name="dates" id="check-in">
+                    <label for="check-out">дата выезда</label>
+                    <input class="date" type="text" name="dates" id="check-out">
+                    <div class="half-width">
+                        <label for="adults">взрослые</label>
+                    </div>
+                    <div class="half-width">
+                        <label for="children">дети</label>
+                    </div>
+                    <input class="btn" type="submit" value="найти">
+                </form>
+              </div>
+          </div>
+      </main>
+      <footer>
+          <div class="container">
+            <div class="column-1">
+                <a href="#">#visitsedona</a>
+            </div>
+            <div class="column-2">
+                <ul class="social-btns">
+                    <li><a class="btn" href="#" alt="twitter">twitter</a></li>
+                    <li><a class="btn" href="#" alt="fb">fb</a></li>
+                    <li><a class="btn" href="#" alt="youtube">youtube</a></li>
+                </ul>
+            </div>
+            <div class="column-3">
+                <a href="#">website by</a>
+            </div>
+          </div>  
+      </footer>
 
     <p>Репозиторий создан для обучения на интенсивном онлайн-курсе «<a href="https://htmlacademy.ru/advanced_intensive">Продвинутый HTML и CSS</a>».</p>
 
