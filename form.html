@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+     <div class="container">
       <header>
-        <div class="container">
         <nav>
             <ul>
                 <li><a href="#">карта штата</a></li>
@@ -15,11 +15,8 @@
                 <li><a href="#">фото и видео</a></li>
                 <li><a href="#">гостиницы</a></li>
             </ul>
-        </nav>
-        </div>    
+        </nav>  
       </header>
-      <main>
-          <div class="container">
             <div class="slider">
                 <img src="img/logo.png">
                 <h1>sedona</h1>  
@@ -29,7 +26,7 @@
                 <p>помогите нашим отелям стать лучше! оставьтеотзыв о них, а также о посещнных вами достопримечательностями</p>
             </div>
             <div class="form">
-                <h2>представьтесь, пожалуйста:</h2> 
+                <h1>представьтесь, пожалуйста:</h1> 
                 <form action="/echo" method="post">
                     <label for="surname">фамилия:</label>
                     <input type="text" id="surname" value="Иванов" required>
@@ -91,22 +88,39 @@
                     </div>
                     <div class="gallery">
                         <h2>загрузите фотографии:</h2>
-                        <input type="button" class="upload" value="выбрать фотографии" disabled>
-                        <img src="img/gallery-1.jpg">
-                        <img src="img/gallery2.jpg">
-                        <img src="img/gallery-3.jpg">
-                        <img src="img/gallery-3.jpg">
-                        <img src="img/gallery-4.jpg">
-                        <img src="img/gallery-5.jpg">
-                        <img src="img/gallery-6.jpg">
+                        <button type="button" class="upload" value="выбрать фотографии" disabled></button>
+                        <div class="gallery gallery-item">
+                        <img src="img/gallery-1.jpg" alt="1">
+                        <a href="#" class="close"></a>
+                        </div>
+                        <div class="gallery gallery-item">
+                        <img src="img/gallery-3.jpg" alt="1">
+                        <a href="#" class="close"></a>
+                        </div>
+                        <div class="gallery gallery-item">
+                        <img src="img/gallery-4.jpg" alt="1">
+                        <a href="#" class="close"></a>
+                        </div>
+                        <div class="gallery gallery-item">
+                        <img src="img/gallery-5.jpg" alt="1">
+                        <a href="#" class="close"></a>
+                        </div>
+                        <div class="gallery gallery-item">
+                        <img src="img/gallery-6.jpg" alt="1">
+                        <a href="#" class="close"></a>
+                        </div>
+                        <div class="gallery gallery-item">
+                        <img src="img/gallery-6.jpg" alt="1">
+                        <a href="#" class="close"></a>
+                        </div>
+                        <div class="gallery gallery-item">
+                        <img src="img/gallery-6.jpg" alt="1">
+                        <a href="#" class="close"></a>
+                        </div>
                     </div>
-                    <input type="submit" value="отправить отзыв">
+                    <button type="submit" value="отправить отзыв"></button>
                 </form>
-            </div>  
-          </div>
-      </main>
       <footer>
-          <div class="container">
             <div class="column-1">
                 <a href="#">#visitsedona</a>
             </div>
@@ -116,9 +130,10 @@
                     <li><a class="btn" href="#" alt="fb">fb</a></li>
                     <li><a class="btn" href="#" alt="youtube">youtube</a></li>
                 </ul>
-            </div>
-          </div>  
+            </div> 
       </footer>
+         </div>
+      </div>
   </body>
 </html>    
     
