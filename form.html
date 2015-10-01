@@ -7,28 +7,28 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <nav>
+      <header class="page__header">
+        <nav class="navigation">
           <div class="logo">
             <img src="#" alt="logo" class="logo__image">
           </div>
-          <ul>
-            <li class="nav__item"><a href="#" class="nav__link">карта штата</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">информация</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">фото и видео</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">гостиницы</a></li>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" class="navigation__link">карта штата</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">информация</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">фото и видео</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">гостиницы</a></li>
           </ul>
         </nav>
       </header>
-      <div class="slider">
-        <img class="slider__image" alt="logo" src="img/logo.png">
-        <h1class="slider__title">sedona</h1>
+      <div class="promo-block">
+        <img class="promo-block__image" alt="logo" src="img/logo.png">
+        <h1 class="promo-block__title">sedona</h1>
       </div>
       <div class="review">
-        <span class="review__span">оставьте свой отзыв</span>
+        <h2 class="review__title">оставьте свой отзыв</h2>
         <p class="review__text">помогите нашим отелям стать лучше! оставьтеотзыв о них, а также о посещнных вами достопримечательностями</p>
       </div>
-      <div class="form">
+      <div class="form__row">
         <h1 class="form__title">представьтесь, пожалуйста:</h1>
         <form action="/echo" method="post">
           <label class="form__label" for="surname">фамилия:</label>
@@ -37,109 +37,109 @@
           <input class="form__input" type="text" value="Петр" id="name" required>
           <label class="form__label" for="father-name">отчество:</label>
           <input class="form__input" type="text" value="Александрович" id="father-name">
-          <div class="impression">
-            <h2 class="impression__title">ваше общее впечатление</h2>
-            <input class="radio__button" type="radio" id="positive" checked>
-            <label class="impression__label" for="positive">скорее положительное</label>
-            <input class="radion__button" id="negative" type="radio">
-            <label class="impression__label" for="negative">скорее отрицательное</label>
+          <div class="form__row">
+            <h2 class="form__title">ваше общее впечатление</h2>
+            <input class="form__radio" type="radio" id="positive" checked>
+            <label class="form__label" for="positive">скорее положительное</label>
+            <input class="form__radio" id="negative" type="radio">
+            <label class="form__label" for="negative">скорее отрицательное</label>
           </div>
-          <div class="travel-date">
-            <h2 class="travel-date__title">даты вашей поездки:</h2>
-            <label  class="travel-date__label" for="check-in">дата приезда</label>
-            <input  class="date travel-date__input" type="text" id="check-in" value="4 июля 2015" required>
-            <label class="travel-date__label" for="counter">длительность пребывания:</label>
-            <a class="travel-date__link" class="minus" href="#">-</a>
-            <input class="travel-date__input" type="number" id="counter" value="14" min="1" max="60">
-            <a class="plus travel-date__link" href="#">+</a>
-            <label class="travel-date__label" for="check-out">дата отъезда:</label>
-            <input class="date travel-date__input" type="text" id="check-out" value="28 июля 2015" required>
+          <div class="form__row">
+            <h2 class="form__title">даты вашей поездки:</h2>
+            <label  class="form__label" for="check-in">дата приезда</label>
+            <input  class="form__input" type="text" id="check-in" value="4 июля 2015" required>
+            <label class="form__label" for="counter">длительность пребывания:</label>
+            <a class="form__link" class="minus" href="#">-</a>
+            <input class="form__input" type="number" id="counter" value="14" min="1" max="60">
+            <a class="plus form__link" href="#">+</a>
+            <label class="form__label" for="check-out">дата отъезда:</label>
+            <input class="date form__input" type="text" id="check-out" value="28 июля 2015" required>
           </div>
-          <div class="members">
-            <h2 class="members__title">кол-во путешественников</h2>
-            <label class="members__label" for="q-ty">количество путешественников:</label>
-            <a class="minus members__link" href="#">-</a>
-            <input class="members_input" id="q-ty" type="number" min="1" max="6" value="2">
-            <a class="plus members__link" href="#">+</a>
-            <label class="members__label" for="num">№</label>
-            <input class="members__input" type="number" value="1" readonly>
-            <label class="members__label" for="surname">фамилия:</label>
-            <input class="members__input" type="text" id="surname" value="Иванов" required>
-            <label class="members__label" for="name">имя:</label>
-            <input class="members__input" type="text" value="Петр" id="name" required>
-            <label class="members__label" for="father-name">отчество:</label>
-            <input class="members__input" type="text" value="Александрович" id="father-name">
-            <label class="members__label" for="num">№</label>
-            <input class="members__input" type="number" value="2" readonly>
-            <label class="members__label" for="surname">фамилия:</label>
-            <input class="members__input" type="text" id="surname" value="Иванов" required>
-            <label class="members__label" for="name">имя:</label>
-            <input class="members__input" type="text" value="Петр" id="name" required>
-            <label class="members__label" for="father-name">отчество:</label>
-            <input class="members__input" type="text" value="Александрович" id="father-name">
+          <div class="form__row">
+            <h2 class="form__title">кол-во путешественников</h2>
+            <label class="form__label" for="q-ty">количество путешественников:</label>
+            <a class="minus form__link" href="#">-</a>
+            <input class="form__input" id="q-ty" type="number" min="1" max="6" value="2">
+            <a class="plus form__link" href="#">+</a>
+            <label class="form__label" for="num">№</label>
+            <input class="form__input" type="number" value="1" readonly>
+            <label class="form__label" for="surname">фамилия:</label>
+            <input class="form__input" type="text" id="surname" value="Иванов" required>
+            <label class="form__label" for="name">имя:</label>
+            <input class="form__input" type="text" value="Петр" id="name" required>
+            <label class="form__label" for="father-name">отчество:</label>
+            <input class="form__input" type="text" value="Александрович" id="father-name">
+            <label class="form__label" for="num">№</label>
+            <input class="form__input" type="number" value="2" readonly>
+            <label class="form__label" for="surname">фамилия:</label>
+            <input class="form__input" type="text" id="surname" value="Иванов" required>
+            <label class="form__label" for="name">имя:</label>
+            <input class="form__input" type="text" value="Петр" id="name" required>
+            <label class="form__label" for="father-name">отчество:</label>
+            <input class="form__input" type="text" value="Александрович" id="father-name">
           </div>
-          <div class="places-visited">
-            <h2 class="places-visited__title">посещенные достопримечательности:</h2>
-            <label class="places-visited__label" for="bridge">мост дьявола</label>
-            <input class="places-visited__input" type="checkbox" checked id="bridge">
-            <label class="places-visited__label" for="slide">Слайд-парк</label>
-            <input class="places visited__label" type="checkbox" id="slide">
-            <label class="places-visited__label" for="mount">Гора-колокол</label>
-            <input class="places visited__label" type="checkbox" id="mount" checked>
-            <label class="places-visited__label" for="red-peak">Красные скалы</label>
-            <input class="places visited__label" id="red-peak" type="checkbox" checked>
+          <div class="form__row">
+            <h2 class="form__title">посещенные достопримечательности:</h2>
+            <label class="form__label" for="bridge">мост дьявола</label>
+            <input class="form__input" type="checkbox" checked id="bridge">
+            <label class="form__label" for="slide">Слайд-парк</label>
+            <input class="form__label" type="checkbox" id="slide">
+            <label class="form__label" for="mount">Гора-колокол</label>
+            <input class="form__label" type="checkbox" id="mount" checked>
+            <label class="form__label" for="red-peak">Красные скалы</label>
+            <input class="form__label" id="red-peak" type="checkbox" checked>
           </div>
           <div class="gallery">
             <h2 class="gallery__title">загрузите фотографии:</h2>
-            <button type="button" class="upload gallery__button" value="выбрать фотографии" disabled></button>
-            <div class="gallery gallery-item">
+            <input type="file" class="upload gallery__button" value="выбрать фотографии" disabled></button>
+            <div class="gallery-item">
               <img class="gallery__image" src="img/gallery-1.jpg" alt="1">
-              <a href="#" class="close gallery__link"></a>
+              <a href="#" class="close gallery-item__delete"></a>
             </div>
-            <div class="gallery gallery-item">
-              <img class="gallery__image" src="img/gallery-3.jpg" alt="1">
-              <a href="#" class="close gallery__link"></a>
+            <div class="gallery-item">
+              <img class="gallery-item__image" src="img/gallery-3.jpg" alt="1">
+              <a href="#" class="close gallery-item__link"></a>
             </div>
-            <div class="gallery gallery-item">
-              <img class="gallery__image" src="img/gallery-4.jpg" alt="1">
-              <a href="#" class="close gallery__link"></a>
+            <div class="gallery-item">
+              <img class="gallery-item__image" src="img/gallery-4.jpg" alt="1">
+              <a href="#" class="close gallery-item__delete"></a>
             </div>
-            <div class="gallery gallery-item">
-              <img class="gallery__image" src="img/gallery-5.jpg" alt="1">
-              <a href="#" class="close gallery__link"></a>
+            <div class="gallery-item">
+              <img class="gallery-item__image" src="img/gallery-5.jpg" alt="1">
+              <a href="#" class="close gallery-item__delete"></a>
             </div>
-            <div class="gallery gallery-item">
-              <img class="gallery__image" src="img/gallery-6.jpg" alt="1">
-              <a href="#" class="close gallery__link"></a>
+            <div class="gallery-item">
+              <img class="gallery-item__image" src="img/gallery-6.jpg" alt="1">
+              <a href="#" class="close gallery-item__delete"></a>
             </div>
-            <div class="gallery gallery-item">
-              <img class="gallery__image" src="img/gallery-6.jpg" alt="1">
-              <a href="#" class="close gallery__link"></a>
+            <div class="gallery-item">
+              <img class="gallery-item__image" src="img/gallery-6.jpg" alt="1">
+              <a href="#" class="close gallery-item__delete"></a>
             </div>
-            <div class="gallery gallery-item">
-              <img class="gallery__image" src="img/gallery-6.jpg" alt="1">
-              <a href="#" class="close gallery__link"></a>
+            <div class="gallery-item">
+              <img class="gallery-item__image" src="img/gallery-6.jpg" alt="1">
+              <a href="#" class="close gallery-item__delete"></a>
             </div>
           </div>
           <button class="form__button" type="submit" value="отправить отзыв"></button>
         </form>
-      <footer>
-        <div class="container">
-          <div class="column-1">
-            <a href="#" class="hashtag column-1__link">#visitsedona</a>
+        <footer>
+          <div class="container">
+            <div class="footer__column">
+              <a href="#" class="hashtag column__link">#visitsedona</a>
+            </div>
+            <div class="footer__column">
+              <ul class="social-btns">
+                <li class="social-btns__item"><a class="social-btns__link" href="#" alt="twitter">twitter</a></li>
+                <li class="social-btns__item"><a class="social-btns__link" href="#" alt="fb">fb</a></li>
+                <li class="social-btns__item"><a class="social-btns__link" href="#" alt="youtube">youtube</a></li>
+              </ul>
+            </div>
+            <div class="author">
+              <a classs="author__link" href="#"><img src="#" alt="htmlacademy" class="author__image"></a>
+            </div>
           </div>
-          <div class="column-2">
-            <ul class="social-btns">
-              <li class="social-btns__item"><a class="btn social-btns__link" href="#" alt="twitter">twitter</a></li>
-              <li class="social-btns__item"><a class="btn social-btns__link" href="#" alt="fb">fb</a></li>
-              <li class="social-btns__item"><a class="btn social-btns__link" href="#" alt="youtube">youtube</a></li>
-            </ul>
-          </div>
-          <div class="column-3">
-            <a classs="column-3__link" href="#"><img src="#" alt="htmlacademy" class="column-3__image"></a>
-          </div>
-        </div>
-      </footer>
+        </footer>
     </div>
   </body>
 </html>

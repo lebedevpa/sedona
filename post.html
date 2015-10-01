@@ -7,16 +7,16 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <nav>
+      <header class="page__header">
+        <nav class="navigation">
           <div class="logo">
             <img src="#" alt="logo" class="logo__image">
           </div>
-          <ul>
-            <li class="nav__item"><a href="#" class="nav__link">карта штата</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">информация</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">фото и видео</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">гостиницы</a></li>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" class="navigation__link">карта штата</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">информация</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">фото и видео</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -24,29 +24,31 @@
         <h1 class="blog-title__title">блог шерифа</h1>
         <p  class="info blog-title__text">седона удивительный город! горы здесь красного цвета, а местный шериф ведет блог и общается на форумах.</p>
       </div>
-      <article class="post">
-        <header class="post__header">
+    <div class="post-content">
+      <article>
+        <header>
           <div class="tags">
             <a href="#" class="tag tag-type tags__link">позавчера</a>
             <a href="№" class="tag tag-type tags__link">проишествия</a>
           </div>
         </header>
-        <h1 class="post__title">внимание! сбежала моя домашняя анаконда</h1>
-        <p class="post__text">Жители седоны и гости города, будьте бдительны - Сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше</p>
-        <h2 class="post__title">предыстория</h2>
-        <p class="post__text">в далеком 85-ом я подобрал эту змею на трассе, ее переехал грузовик и она валялась на обочине. мне стадол жаль ее и я решил взять ее с собой. кинул в багажник пикапа и подумал тогда:"если доедет до седоны живой, так и быть, оставлю ее себе"</p>
-        <h2 class="post__title">пропажа</h2>
-        <p class="post__text">неделею назад я вернулся из канзаса и не нашел анаконду дома, обошел все 200 гектаров своего участка, но ее нигде нет, решил сообщить в полицию, но вовремя вспомнил, что я и есть полиция, поэтому отправился на поиски сам. осбоые приметы змеи:</p>
-        <ul class="post-list">
-          <li class="post-list__item">длина: 5 метров</li>
-          <li class="post-list__item">масса: 85кг</li>
-          <li class="post-list__item">окраска: серовато-зеленая</li>
+        <h1>внимание! сбежала моя домашняя анаконда</h1>
+        <p>Жители седоны и гости города, будьте бдительны - Сбежала моя домашняя змея. Увидевшему срочно звонить 911 и бежать от нее подальше</p>
+        <h2>предыстория</h2>
+        <p>в далеком 85-ом я подобрал эту змею на трассе, ее переехал грузовик и она валялась на обочине. мне стадол жаль ее и я решил взять ее с собой. кинул в багажник пикапа и подумал тогда:"если доедет до седоны живой, так и быть, оставлю ее себе"</p>
+        <h2>пропажа</h2>
+        <p>неделею назад я вернулся из канзаса и не нашел анаконду дома, обошел все 200 гектаров своего участка, но ее нигде нет, решил сообщить в полицию, но вовремя вспомнил, что я и есть полиция, поэтому отправился на поиски сам. осбоые приметы змеи:</p>
+        <ul>
+          <li>длина: 5 метров</li>
+          <li>масса: 85кг</li>
+          <li>окраска: серовато-зеленая</li>
         </ul>
-        <p class="post__text">если вы увидете эту змею, сразу <a  class="post__text__link"href="#">звоните 911</a> и бегитесо всех ног от нее!</p>
-        <h2 class="post__title">предостережение</h2>
-        <p class="post__text">не пытайтесь убить змею, если увидете! помните, что она тоже живое существо, хоть и выглядит не очень приятно. вот цитата, которая мне очень нравится:</p>
-        <blockquote class="post-blocquote__item"><p class="blockquote__text">самый свирепый из зверей - теперь мы знаем - это человек, он убивает даже если не голоден.</p><p class="blockquote__text">Адриано Челентано</p></blockquote>
+        <p>если вы увидете эту змею, сразу <a href="#">звоните 911</a> и бегитесо всех ног от нее!</p>
+        <h2>предостережение</h2>
+        <p>не пытайтесь убить змею, если увидете! помните, что она тоже живое существо, хоть и выглядит не очень приятно. вот цитата, которая мне очень нравится:</p>
+        <blockquote><p>самый свирепый из зверей - теперь мы знаем - это человек, он убивает даже если не голоден.</p><p>Адриано Челентано</p></blockquote>
       </article>
+    </div>
       <div class="paginator">
         <ul>
           <li class="paginator__item"><a class="paginator__link" href="#">пред.</a></li>
@@ -56,19 +58,19 @@
       </div>
       <footer>
         <div class="container">
-            <div class="column-1">
-                <a href="#" class="hashtag column-1__link">#visitsedona</a>
-            </div>
-            <div class="column-2">
-              <ul class="social-btns">
-                <li class="social-btns__item"><a class="btn social-btns__link" href="#" alt="twitter">twitter</a></li>
-                <li class="social-btns__item"><a class="btn social-btns__link" href="#" alt="fb">fb</a></li>
-                <li class="social-btns__item"><a class="btn social-btns__link" href="#" alt="youtube">youtube</a></li>
-              </ul>
-            </div>
-            <div class="column-3">
-              <a classs="column-3__link" href="#"><img src="#" alt="htmlacademy" class="column-3__image"></a>
-            </div>
+          <div class="footer__column">
+            <a href="#" class="hashtag column__link">#visitsedona</a>
+          </div>
+          <div class="footer__column">
+            <ul class="social-btns">
+              <li class="social-btns__item"><a class="social-btns__link" href="#" alt="twitter">twitter</a></li>
+              <li class="social-btns__item"><a class="social-btns__link" href="#" alt="fb">fb</a></li>
+              <li class="social-btns__item"><a class="social-btns__link" href="#" alt="youtube">youtube</a></li>
+            </ul>
+          </div>
+          <div class="author">
+            <a classs="author__link" href="#"><img src="#" alt="htmlacademy" class="author__image"></a>
+          </div>
         </div>
       </footer>
     </div>

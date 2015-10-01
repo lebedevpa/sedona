@@ -7,16 +7,16 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <nav>
+      <header class="page__header">
+        <nav class="navigation">
           <div class="logo">
             <img src="#" alt="logo" class="logo__image">
           </div>
-          <ul>
-            <li class="nav__item"><a href="#" class="nav__link">карта штата</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">информация</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">фото и видео</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">гостиницы</a></li>
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#" class="navigation__link">карта штата</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">информация</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">фото и видео</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -24,7 +24,7 @@
           <h1 class="promo-block__title">седона - небольшой городок в аризоне, заслуживающий большего!</h1>
           <p class="promo-block__text">рассмотрим 5 причин, по которым седона круче чем гранд каньон!</p>
         </div>
-        <div class="reason-row reason">
+        <div class="reason-row">
           <div class="reason">
             <h2 class="reason__title">настоящий городок</h2>
             <div class="reason__number">- 1 -</div>
@@ -35,53 +35,53 @@
           </div>
         </div>
         <div class="reason-row">
-          <div class="reason reason-accomodation">
-            <h2 class="reason-accomodation__title">жилье</h2>
-            <p class="reason-accomodation__text">рекомендуем жить в настоящем мотеле, все как в кино!</p>
+          <div class="reason reason--image reason--image-home">
+            <h2 class="reason__title">жилье</h2>
+            <p class="reason__text">рекомендуем жить в настоящем мотеле, все как в кино!</p>
           </div>
-          <div class="reason reason-hamburger">
-            <h2 class="reason-hamburger__title">еда</h2>
-            <p class="reason-hamburger__text">всегда заказывай фирменный бургер, вы не разочаруетесь</p>
+          <div class="reason reason--image reason--image-hamburger">
+            <h2 class="reason__title">еда</h2>
+            <p class="reason__text">всегда заказывай фирменный бургер, вы не разочаруетесь</p>
           </div>
-          <div class="reason reason-gift">
-            <h2 class="reason-gift__title">сувениры</h2>
-            <p class="reason-gift__text">не только китайского, но и местного производства</p>
+          <div class="reason reason--image reason--image-gift">
+            <h2 class="reason__title">сувениры</h2>
+            <p class="reason__text">не только китайского, но и местного производства</p>
           </div>
         </div>
         <div class="reason-row">
-          <div class="reason-bridge">
-            <h2 class="reason-bridge__title">там есть мост дьяволоа</h2>
-          <div class="number">- 2 -</div>
-            <p class="reason-bridge__text">да, по нему можно пройтись! если конечно вы осмелитесь</p>
+          <div class="reason">
+            <h2 class="reason__title">там есть мост дьяволоа</h2>
+          <div class="reason__number">- 2 -</div>
+            <p class="reason__text">да, по нему можно пройтись! если конечно вы осмелитесь</p>
           </div>
           <div class="reason-picture">
             <img src="#" alt="devil's bridge" class="reason-picture__image">
           </div>
         </div>
-        <div class="reason-row reason-row-gray">
-          <div class="reason reason-area">
-            <h2 class="reason-area__title">небольшая площадь</h2>
-            <div class="number">- 3 -</div>
-            <p class="reason-area__text">все достопримечательности находятся очень близко</p>
+        <div class="reason-row--gray">
+          <div class="reason">
+            <h2 class="reason__title">небольшая площадь</h2>
+            <div class="reason__number">- 3 -</div>
+            <p class="reason__text">все достопримечательности находятся очень близко</p>
           </div>
-          <div class="reason reason-road">
-            <h2 class="reason-road__title">красивая дорога</h2>
-            <div class="number">- 4 -</div>
-            <p class="reason-road__text">Седона не атракцион для туристов, там течет своя жизнь</p>
+          <div class="reason">
+            <h2 class="reason__title">красивая дорога</h2>
+            <div class="reason__number">- 4 -</div>
+            <p class="reason__text">Седона не атракцион для туристов, там течет своя жизнь</p>
           </div>
-          <div class="reason reason-tourist">
-            <h2 class="reason-tourist__title">мало туристов</h2>
-            <div class="number">- 5 -</div>
-            <p class="reason-tourist__text">большинство едете в гранд каньон и толпится там</p>
+          <div class="reason">
+            <h2 class="reason__title">мало туристов</h2>
+            <div class="reason__numbeer">- 5 -</div>
+            <p class="reason__text">большинство едете в гранд каньон и толпится там</p>
           </div>
         </div>
         <div class="form">
           <h2 class="form__title">поиск гостиницы в седоне</h2>
           <form action="/echo" method="post">
             <label class="check-in__label" for="check-in">дата заезда</label>
-            <input class="date check-in__date__input" type="text" name="dates" id="check-in">
+            <input class="check-in__input" type="text" name="dates" id="check-in">
             <label class="check-out__label" for="check-out">дата выезда</label>
-            <input class="date check-out__date__input" type="text" name="dates" id="check-out">
+            <input class="check-out__input" type="text" name="dates" id="check-out">
             <div class="form__half-width">
               <label class="half-width__label" for="adults">взрослые</label>
             </div>
@@ -94,18 +94,18 @@
         <div class="map">
           <footer>
             <div class="container">
-              <div class="column-1">
-                <a href="#" class="hashtag column-1__link">#visitsedona</a>
+              <div class="footer__column">
+                <a href="#" class="hashtag column__link">#visitsedona</a>
               </div>
-              <div class="column-2">
+              <div class="footer__column">
                 <ul class="social-btns">
-                  <li class="social-btns__item"><a class="btn social-btns__link" href="#" alt="twitter">twitter</a></li>
-                  <li class="social-btns__item"><a class="btn social-btns__link" href="#" alt="fb">fb</a></li>
-                  <li class="social-btns__item"><a class="btn social-btns__link" href="#" alt="youtube">youtube</a></li>
+                  <li class="social-btns__item"><a class="social-btns__link" href="#" alt="twitter">twitter</a></li>
+                  <li class="social-btns__item"><a class="social-btns__link" href="#" alt="fb">fb</a></li>
+                  <li class="social-btns__item"><a class="social-btns__link" href="#" alt="youtube">youtube</a></li>
                 </ul>
               </div>
-              <div class="column-3">
-                <a classs="column-3__link" href="#"><img src="#" alt="htmlacademy" class="column-3__image"></a>
+              <div class="author">
+                <a classs="author__link" href="#"><img src="#" alt="htmlacademy" class="author__image"></a>
               </div>
             </div>
           </footer>
