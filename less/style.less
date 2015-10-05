@@ -1,7 +1,7 @@
 /* index */
 html, body{
   font-size:18px;
-  font-family: "PT Sans bold"
+  font-family: 'PT Sans', sans-serif;
 
 }
 
@@ -18,43 +18,101 @@ html, body{
 }
 
 .logo {
-
+  width:300px;
 }
 
-.logo__image {
-
+.logo__image{
+  display: block;
+  margin: 0 auto;
 }
 
-.navigation__list{
+/* вопрос - почему не отображается?*/
+.logo__image::after{
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 150px;
   background-color: #81b3d2;
+  transform: rotate(45deg);
+  border-radius: 10px;
+}
+.navigation__list{
+  list-style: none;
+  width: 300px;
+  font-size: 0;
+  padding: 0;
 }
 
-.navigation_item{
-
+.navigation__item{
+  display: flex;
+  border-top: solid 1px #9ad1bd;
+  border-bottom: 1px solid #678fa8;
+  background-color: #81b3d2;
+  padding: 0;
 }
 
-.navigation__item-close{
+.navigation__item:first-child{
+  border-top:none;
+}
 
+/* почему не получилось? */
+.navigation__item:last-child{
+  background-image: linear-gradient(#81b3d2 80% #6da5b1 80%);
 }
 
 .navigation__link{
+  font-size: 18px;
+  font-weight:;
+  line-height: 40px;
+  width: 300px;
+  text-decoration: none;
+  text-align: center;
+  padding:8px;
+  color: #fff;
+  list-style: none;
+  text-transform: uppercase;
+  background-color: #81b3d2;
 
 }
-
+/* гребанные псевдоэлементы! */
+.navigation__item:first-child::after{
+  content: '';
+  position: absolute;
+  background: url('img/close.png') no-repeat;
+}
+/* тут то что не так?! */
 .promo-block {
-
+  background-image: url('img/sedona-main.jpg') no-repeat;
 }
 
 .promo-block__title {
-
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .promo-block__text{
-
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .reason-row{
+  background-color: #81b3d2;
+}
+.reason-row--blue {
+  background-color: #81b3d2;
+}
 
+.reason-row--white{
+  background: #fff;
+}
+
+.reason-row--white .reason{
+  background: #fff;
 }
 
 .reason{
@@ -62,19 +120,33 @@ html, body{
 }
 
 .reason__title{
-
+  font-size: 21px;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .reason__number{
-
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .reason__text{
-
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
 }
 
-.reason_picture{
-
+.reason-picture{
+  width:512px;
+  height: 256px;
+  transform:translateX(-154px);
 }
 .reason-pictrue__image{
 
