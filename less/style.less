@@ -4,26 +4,30 @@
 /* index */
 html,
 body {
+  marign:0;
+  padding:0;
   font-size: 18px;
   font-family: 'PT Sans', sans-serif;
 }
 
 .container {
-  width: 300px;
+  width: 320px;
 }
 
 .logo {
-  width: 300px;
+  width: 320px;
+  margin-bottom: 0;
   &__image{
     display: block;
     margin: 0 auto;
     z-index: 1;
+    margin-bottom: 0;
   }
   &::after{
   display: block;
   position: relative;
   top: -140px;
-  left: 80px;
+  left: 90px;
   content:'';
   width: 140px;
   height: 140px;
@@ -32,17 +36,12 @@ body {
   transform: rotate(45deg);
   z-index: -1;
   }
-  &__menu{
-    position:relative;
-    background: url("@{images}/menu.png") no-repeat;
-    top: 200px;
-  }
 }
 
 .navigation {
   &__list {
     list-style: none;
-    width: 300px;
+    width: 320px;
     font-size: 0;
     padding: 0;
   }
@@ -56,18 +55,15 @@ body {
   &__item:first-child {
       border-top: none;
   }
-  &__item:first-child::after {
-    display: block;
-    background: black;
-    width:20px;
-    height: 20px;
-    position: absolute;
-    background: url('../img/close.png') no-repeat;
+
+  &__item:last-child{
+    margin-bottom: 0;
   }
+
   &__link {
     font-size: 18px;
     line-height: 40px;
-    width: 300px;
+    width: 320px;
     text-decoration: none;
     text-align: center;
     padding: 8px;
@@ -79,10 +75,137 @@ body {
 }
 
 .sedona{
+  font-size: 0;
+  margin-top: -140px;
+  padding: 0;
   background: url("@{images}/sedona-main.jpg") no-repeat;
-  &__welcome {
-    color:@main-blue;
+  background-position: center;
+  height:450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: -1;
+}
+/*псевдоэлемент не залазит на картинку*/
+.promo-block{
+  width:320px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+  &__title{
     font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 26px;
+  }
+
+  &::before{
+
+  }
+
+  &::after{
+
+  }
+}
+/*странное поведение текста, высота блока не менятеся, почему?!*/
+.reason-row--blue{
+  width:320px;
+  background-color: @main-blue;
+  text-align: center;
+  color:#fff;
+  margin-bottom: 30px;
+  .reason__title{
+    font-size: 21px;
+    line-height: 10px;
     text-transform: uppercase;
+  }
+
+  .reason-picture__image{
+    width: 320px;
+  }
+}
+
+.reason-row--white{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: uppercase;
+
+  .reason__title{
+    font-size: 18px;
+    line-height: 26px;
+    margin-left: 80px;
+  }
+
+  .reason__text{
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 80px;
+  }
+
+
+  .reason--image-home{
+    background: url("@{images}/house.png") no-repeat;
+  }
+
+  .reason--image-gift {
+    background: url("@{images}/gift.png") no-repeat;
+  }
+
+  .reason--image-hamburger {
+    background: url("@{images}/burger.png") no-repeat;
+  }
+}
+
+.reason-row--gray{
+  margin:0;
+  padding:0;
+  background-color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  .reason{
+    border-bottom:1px solid #d6d6d6;
+    text-transform: uppercase;
+    &__title{
+      font-size: 21px;
+      line-height: 10px;
+    }
+
+    &__text{
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
+.find-hotel{
+  margin:0;
+  padding:0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  text-transform: uppercase;
+  &__title{
+    font-size: 21px;
+    line-height: 10px;
+  }
+  &__text{
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__button{
+    height:60px;
+    width: 280px;
+    background: @main-blue;
   }
 }
